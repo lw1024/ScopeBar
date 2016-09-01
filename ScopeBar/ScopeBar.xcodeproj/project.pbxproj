@@ -10,6 +10,7 @@
 		5318163A1D77AE9800F1D8D8 /* ScopeBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 531816391D77AE9800F1D8D8 /* ScopeBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		531816411D77AE9800F1D8D8 /* ScopeBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531816361D77AE9800F1D8D8 /* ScopeBar.framework */; };
 		531816461D77AE9800F1D8D8 /* ScopeBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531816451D77AE9800F1D8D8 /* ScopeBarTests.swift */; };
+		531816861D77B25B00F1D8D8 /* ScopeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531816851D77B25B00F1D8D8 /* ScopeBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		531816401D77AE9800F1D8D8 /* ScopeBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScopeBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		531816451D77AE9800F1D8D8 /* ScopeBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeBarTests.swift; sourceTree = "<group>"; };
 		531816471D77AE9800F1D8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		531816851D77B25B00F1D8D8 /* ScopeBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		531816381D77AE9800F1D8D8 /* ScopeBar */ = {
 			isa = PBXGroup;
 			children = (
+				531816851D77B25B00F1D8D8 /* ScopeBar.swift */,
 				531816391D77AE9800F1D8D8 /* ScopeBar.h */,
 				5318163B1D77AE9800F1D8D8 /* Info.plist */,
 			);
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531816861D77B25B00F1D8D8 /* ScopeBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 		5318164B1D77AE9800F1D8D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +325,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.luwei.ScopeBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5318164C1D77AE9800F1D8D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +385,7 @@
 				5318164C1D77AE9800F1D8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5318164D1D77AE9800F1D8D8 /* Build configuration list for PBXNativeTarget "ScopeBarTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +394,7 @@
 				5318164F1D77AE9800F1D8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ScopeBarSimple/ScopeBarSimple.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ScopeBar/ScopeBar.xcodeproj">
    </FileRef>
 </Workspace>
